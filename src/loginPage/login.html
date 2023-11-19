@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>UNT LOST AND FOUND SYSTEM</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="login.css" />
+	<script src="login.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<a href="https://www.unt.edu/" target="_blank">
+				<h2>
+					<span class="highlight">UNT System</span>
+				</h2>
+			</a>
+			<h2>UNT LOST AND FOUND</h2>
+		</div>
+	</header>
+	<div class="container">
+		<div class="main">
+			<input type="checkbox" id="chk" aria-hidden="true" />
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User number" required id="sign_id" />
+					<input type="email" id="sign_mail" name="email" placeholder="Email" required />
+					<input type="password" name="pswd" placeholder="Password" required id="sign_pwd_id" />
+					<button type="submit" onclick="redirectToLoginPage()">Sign up</button>
+					<p id="error-message" style="color: red; display: none;">Please provide right details.</p>
+					<p id="success-message" style="color: rgb(51, 218, 17); display: none;">You are registered
+						successfully.</p>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" id="login_mail" name="email" placeholder="Email" required />
+					<input type="password" name="pswd" placeholder="Password" required id="login_pwd_id" />
+					<button type="submit" onclick="redirectToDashboardPage()">
+						Login
+					</button>
+					<a href="/Users/puppa/All_Git_Files/unt_lost_and_found/src/forgetPassword/forgotPwd.html" target="_blank" class="forgot-password">Forgot
+						Password?</a>
+					<p id="error-message1" style="color: red; display: none;">Please provide right details.</p>
+					<p id="success-message1" style="color: rgb(51, 218, 17); display: none;">You are login successfully.
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<aside>
+		<div class="myimage">
+			<img src="/Users/puppa/All_Git_Files/unt_lost_and_found/src/imageFiles/unt_logo_4.png" />
+		</div>
+	</aside>
+
+	<footer>
+		<div class="boxes">
+			<div class="box">
+				<img src="/Users/puppa/All_Git_Files/unt_lost_and_found/src/imageFiles/unt_logo_3.png" />
+				<p>
+					1155 Union Circle #305398 <br />
+					Denton, Texas 76203-5017
+				</p>
+			</div>
+			<div class="box">
+				<h3 style="color: green">Required Maintenance</h3>
+				<p>
+					myUNT requires routine maintenance.
+					<br />
+					<br />
+					Plan for service intermissions:
+					<br />Tuesday and Thursday 7:00 pm - 9:30 pm <br />Saturday 7:00 pm
+					until noon Sunday
+				</p>
+			</div>
+			<div class="box">
+				<h3 style="color: green">Get Help</h3>
+				<a href="">University Information Technology Help Desk</a>
+				<p>940-565-2324</p>
+				<a href="">helpdesk@unt.edu</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+.header-container {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	position: relative;
+}
+.login-modal {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+	width: 100px;
+	height: 200px;
+	background-color: white;
+}
+
+.login-button {
+	position: relative;
+}
+.container {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.is-open{
+	display: flex;
+}
+header {
+	background-color: green;
+	border-bottom: #000 4px solid;
+	text-align: center;
+	color: #fff;
+	font-family: "Times New Roman", Times, serif;
+	text-transform: uppercase;
+}
+
+header .highlight {
+	float: left;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+header .container .highlight:hover {
+	color: #000;
+}
+
+.container button {
+	margin: 10%;
+	flex: 1 1 30%;
+	width: 30%;
+	height: 250px;
+	float: left;
+	border-radius: 10px;
+	box-sizing: border-box;
+	/* display: inline-block; */
+	background-color: green;
+}
+.container button:hover {
+	background-color: rgb(9, 160, 9);
+}
+
+.container .box1 button {
+	color: #fff;
+	font-size: 2.3em;
+	font-family: "Times New Roman", Times, serif;
+}
+.container .box2 button {
+	color: #fff;
+	font-size: 2.3em;
+	font-family: "Times New Roman", Times, serif;
+}
+footer {
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+	background-color: #000;
+	padding: 20px;
+	min-height: 180px;
+}
+footer .boxes {
+	background-color: #000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .boxes .box {
+	float: left;
+	flex: 1 1 30%;
+	width: 30%;
+	background-color: #000;
+	margin: 0 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+footer .box a {
+	color: #fff;
+}
+footer .box a:hover {
+	color: green;
+}
+footer .box img {
+	width: 250px;
+}

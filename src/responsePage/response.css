@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+.container {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.container h1 {
+	color: green;
+	font-family: "Times New Roman", Times, serif;
+}
+
+header {
+	background-color: green;
+	border-bottom: #000 4px solid;
+	text-align: center;
+	color: #fff;
+	font-family: "Times New Roman", Times, serif;
+	text-transform: uppercase;
+}
+
+header .container .highlight {
+	float: left;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+header .container .highlight:hover {
+	color: #000;
+}
+/* .container .box1 .h1 {
+	margin: 10%;
+	flex: 1 1 30%;
+	width: 30%;
+	height: 250px;
+	float: left;
+	border-radius: 10px;
+	color: green;
+	box-sizing: border-box;
+	/* display: inline-block; */
+/* background-color: green;
+} */
+.container .h1 {
+	color: green;
+}

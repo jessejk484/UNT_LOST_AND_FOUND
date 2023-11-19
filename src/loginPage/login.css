@@ -1,0 +1,218 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+	/* font-family: 'Jost', sans-serif; */
+	/* Add background image */
+	/* background-repeat: no-repeat;
+     background-size: cover; */
+	/* background-color: #c1bbbb; */
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background-color: green;
+	border-bottom: #000 4px solid;
+	text-align: center;
+	color: #fff;
+	font-family: "Times New Roman", Times, serif;
+	text-transform: uppercase;
+}
+
+aside {
+	position: absolute;
+	top: 80px;
+	margin-top: 50px;
+	right: 80px;
+}
+aside .myimage {
+	/* width: 100%; */
+	/* height: 300px; */
+	max-width: 100%;
+	height: auto;
+}
+
+header .highlight {
+	float: left;
+	color: #fff;
+}
+
+.main {
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
+		no-repeat center/ cover;
+	border-radius: 10px;
+}
+
+#chk {
+	display: none;
+}
+
+.forgot-password {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	color: #007bff;
+	text-decoration: none;
+}
+
+.signup {
+	/* position: relative; */
+	border-radius: 10px;
+	background-color: rgb(86, 79, 79);
+	width: 100%;
+	height: 100%;
+}
+label {
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	padding-top: 10px;
+	transition: 0.5s ease-in-out;
+}
+input {
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button {
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: green;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: 0.2s ease-in;
+	cursor: pointer;
+}
+button:hover {
+	background: black;
+}
+.login {
+	height: 460px;
+	background: rgb(174, 230, 174);
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: 0.8s ease-in-out;
+}
+.login label {
+	color: black;
+	transform: scale(0.6);
+}
+
+#chk:checked ~ .login {
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+	transform: scale(1);
+}
+#chk:checked ~ .signup label {
+	transform: scale(0.6);
+}
+
+footer {
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+	background-color: #000;
+	padding: 20px;
+	min-height: 180px;
+}
+footer .boxes {
+	background-color: #000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .boxes .box {
+	float: left;
+	flex: 1 1 30%;
+	width: 30%;
+	background-color: #000;
+	margin: 0 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+footer .box a {
+	color: #fff;
+}
+footer .box a:hover {
+	color: green;
+}
+footer .box img {
+	width: 250px;
+}
+
+header .container .highlight:hover {
+	color: #000;
+}
+
+@media (max-width: 768px) {
+	footer .box {
+		flex: 1 1 45%; /* Adjust width for smaller screens */
+		margin: 0 5px; /* Adjust margin for smaller screens */
+	}
+}
+
+@media (max-width: 480px) {
+	footer .box {
+		flex: 1 1 100%; /* Make the boxes full width for smaller screens */
+		margin: 0; /* Remove margin for smaller screens */
+	}
+}
+
+#error-message {
+    color: red;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #success-message {
+    color: rgb(61, 231, 19);
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #error-message1 {
+    color: red;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #success-message1 {
+    color: rgb(61, 231, 19);
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
