@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./admin.css" />
+    <title>Dashboard</title>
+</head>
+<header>
+    <div class="header-container">
+        <a href="https://www.unt.edu/" target="_blank">
+            <h2>
+                <span class="highlight">UNT System</span>
+            </h2>
+        </a>
+        <h2>UNT LOST AND FOUND</h2>
+        <button class="login-button js-login-button">
+            <svg name="IconMore" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true"
+                role="presentation" focusable="false" class="css-1uh2md0-inlineSVG-svgIcon"
+                style="width: 1em; height: 1em;">
+                <g role="presentation">
+                    <path
+                        d="M960 1468.235c93.448 0 169.412 75.965 169.412 169.412 0 93.448-75.964 169.412-169.412 169.412-93.448 0-169.412-75.964-169.412-169.412 0-93.447 75.964-169.412 169.412-169.412Zm0-677.647c93.448 0 169.412 75.964 169.412 169.412 0 93.448-75.964 169.412-169.412 169.412-93.448 0-169.412-75.964-169.412-169.412 0-93.448 75.964-169.412 169.412-169.412Zm0-677.647c93.448 0 169.412 75.964 169.412 169.412 0 93.447-75.964 169.412-169.412 169.412-93.448 0-169.412-75.965-169.412-169.412 0-93.448 75.964-169.412 169.412-169.412Z"
+                        fill-rule="evenodd"></path>
+                </g>
+            </svg>
+            <div class="login-modal js-login-modal">
+                <div>Abhishek</div>
+                <div>Sign Out</div>
+            </div>
+        </button>
+    </div>
+</header>
+
+<body>
+    <h1>Dashboard</h1>
+    <div id="analyticsContainer">
+        <div class="chart-container">
+            <h2>Total Users</h2>
+            <p id="totalUsers">500</p>
+            <canvas id="totalUsersChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Sessions</h2>
+            <p id="sessions">75%</p>
+            <canvas id="sessionsChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Average Click Rate</h2>
+            <p id="averageClickRate">60%</p>
+            <canvas id="clickRateChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Page Views</h2>
+            <p id="pageViews">90</p>
+            <canvas id="pageViewsChart"></canvas>
+        </div>
+    </div>
+
+    <div id="statisticsContainer">
+        <div id="statistics">
+            <h2>Statistics</h2>
+            <table>
+                <tr>
+                    <td>Complaints:</td>
+                    <td><strong id="totalComplaints">10</strong></td>
+                </tr>
+                <tr>
+                    <td>Found:</td>
+                    <td><strong id="itemsFound">5</strong></td>
+                </tr>
+                <tr>
+                    <td>Not Found:</td>
+                    <td><strong id="itemsNotFound">5</strong></td>
+                </tr>
+                <tr>
+                    <td>In Progress:</td>
+                    <td><strong id="itemsInprogress">5</strong></td>
+                </tr>
+                <tr>
+                    <td>Claimed:</td>
+                    <td><strong id="itemsClaimed">5</strong></td>
+                </tr>
+            </table>
+        </div>
+        <canvas id="statisticsChart" width="200" height="200"></canvas>
+        <canvas id="monthlyChart" width="400" height="200"></canvas>
+    </div>
+
+
+    <h2>Complaints</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Complaint Type</th>
+                <th>Date</th>
+                <th>Place</th>
+                <th>Mobile Number</th>
+                <th>UNT Email ID</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="unresolved">
+                <td>John</td>
+                <td>Doe</td>
+                <td>Lost</td>
+                <td>2023-11-25</td>
+                <td>Main Campus</td>
+                <td>555-1234</td>
+                <td>john.doe@my.unt.edu</td>
+                <td>Not Resolved</td>
+            </tr>
+            <tr class="inprogress">
+                <td>manisha</td>
+                <td>lokasani</td>
+                <td>In Progress</td>
+                <td>2023-05-24</td>
+                <td>Recreation Center</td>
+                <td>555-5678</td>
+                <td>manishalokasani@my.unt.edu</td>
+                <td>In Progress</td>
+            </tr>
+            <tr class="claimed">
+                <td>harshitha</td>
+                <td>kallu</td>
+                <td>Claimed</td>
+                <td>2023-05-05</td>
+                <td>Discovery Park</td>
+                <td>555-5678</td>
+                <td>harshithakallu@my.unt.edu</td>
+                <td>Claimed</td>
+            </tr>
+            <tr class="claimed">
+                <td>vinitha</td>
+                <td>kunku</td>
+                <td>Claimed</td>
+                <td>2023-05-24</td>
+                <td>Union</td>
+                <td>555-5678</td>
+                <td>vinithakunku@my.unt.edu</td>
+                <td>Claimed</td>
+            </tr>
+            <tr class="inprogress">
+                <td>sujeev</td>
+                <td>garlapati</td>
+                <td>In Progress</td>
+                <td>2023-05-15</td>
+                <td>Discovery Park</td>
+                <td>555-5678</td>
+                <td>sujeevgarlapati@my.unt.edu</td>
+                <td>In Progress</td>
+            </tr>
+            <tr class="resolved">
+                <td>bharath</td>
+                <td>garlapati</td>
+                <td>Found</td>
+                <td>2023-05-26</td>
+                <td>Discovery Park</td>
+                <td>555-5678</td>
+                <td>bharathgarlapati@my.unt.edu</td>
+                <td>Resolved</td>
+            </tr>
+            <tr class="unresolved">
+                <td>rakesh</td>
+                <td>kovvu</td>
+                <td>Lost</td>
+                <td>2023-02-15</td>
+                <td>Discovery Park</td>
+                <td>555-5678</td>
+                <td>rakeshkovvu@my.unt.edu</td>
+                <td>Not Resolved</td>
+            </tr>
+            <!-- Add more rows for additional complaints -->
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="admin.js"></script>
+</body>
+</body>
+
+</html>

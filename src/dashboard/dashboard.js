@@ -1,10 +1,11 @@
+function redirectToGetForm() {
+    window.location.href = "/Users/puppa/All_Git_Files/unt_lost_and_found/src/getPage/getPage.html";
+}
+function redirectToLostForm() {
+    window.location.href = "/Users/puppa/All_Git_Files/unt_lost_and_found/src/lostForm/lostForm.html";
+}
 document.addEventListener('DOMContentLoaded', function () {
-    function redirectToGetForm() {
-        window.location.href = "/Users/puppa/All_Git_Files/unt_lost_and_found/src/getPage/getPage.html";
-    }
-    function redirectToLostForm() {
-        window.location.href = "/Users/puppa/All_Git_Files/unt_lost_and_found/src/lostForm/lostForm.html";
-    }
+    //document.addEventListener('DOMContentLoaded', function () {
     const loginBtn = document.querySelector('.js-login-button');
 
     const loginModal = document.querySelector('.js-login-modal');
