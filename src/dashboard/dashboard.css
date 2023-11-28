@@ -3,38 +3,44 @@ body {
 	padding: 0;
 	background-color: #eee;
 }
+
 .header-container {
 	width: 95%;
 	margin: auto;
-	overflow: hidden;
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	position: relative;
 }
+
 .login-modal {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-	width: 100px;
-	height: 200px;
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	width: fit-content;
+	gap: 11px;
+	flex-direction: column;
+	padding: 10px;
 	background-color: white;
 }
 
 .login-button {
 	position: relative;
 }
+
 .container {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
 }
 
-.is-open{
+.is-open {
 	display: flex;
 }
+
 header {
 	background-color: green;
 	border-bottom: #000 4px solid;
@@ -65,6 +71,7 @@ header .container .highlight:hover {
 	/* display: inline-block; */
 	background-color: green;
 }
+
 .container button:hover {
 	background-color: rgb(9, 160, 9);
 }
@@ -74,11 +81,13 @@ header .container .highlight:hover {
 	font-size: 2.3em;
 	font-family: "Times New Roman", Times, serif;
 }
+
 .container .box2 button {
 	color: #fff;
 	font-size: 2.3em;
 	font-family: "Times New Roman", Times, serif;
 }
+
 footer {
 	text-align: center;
 	color: #fff;
@@ -87,6 +96,7 @@ footer {
 	padding: 20px;
 	min-height: 180px;
 }
+
 footer .boxes {
 	background-color: #000;
 	display: flex;
@@ -107,9 +117,11 @@ footer .boxes .box {
 footer .box a {
 	color: #fff;
 }
+
 footer .box a:hover {
 	color: green;
 }
+
 footer .box img {
 	width: 250px;
 }

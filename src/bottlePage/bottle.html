@@ -1,72 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./bottle.css" />
-		<script src="bottle.js"></script>
-	</head>
-	<body>
-		<header>
-			<div class="header-container">
-				<a href="https://www.unt.edu/" target="_blank"
-					><h2>
-						<span class="highlight">UNT System</span>
-					</h2></a
-				>
-				<h2>GET</h2>
-			</div>
-		</header>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./bottle.css" />
+	<script src="bottle.js"></script>
+</head>
+
+<body>
+	<header>
 		<div class="header-container">
-			<table>
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Item</th>
-						<th>Place</th>
-						<th>Date</th>
-						<th>Description</th>
-						<th>Matched</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>B1</td>
-						<td>Bottle</td>
-						<td>Hyderabad</td>
-						<td>23-03-2023</td>
-						<td>Lost the bottle</td>
-						<td>Found</td>
-					</tr>
-					<tr>
-						<td>B2</td>
-						<td>Bottle</td>
-						<td>Hyderabad</td>
-						<td>23-03-2023</td>
-						<td>Lost the bottle</td>
-						<td>Found</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="pagination">
-				<a href="#">&laquo;</a>
-				<a class="active" href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
-				<a href="#">5</a>
-				<a href="#">6</a>
-				<a href="#">&raquo;</a>
+			<a href="https://www.unt.edu/" target="_blank">
+				<h2>
+					<span class="highlight">UNT System</span>
+				</h2>
+			</a>
+			<h2>GET</h2>
+		</div>
+	</header>
+	<div class="header-container">
+		<table id="table">
+			<thead>
+				<tr>
+					<th data-filter-value="id">ID</th>
+					<th data-filter-value="item">Item</th>
+					<th data-filter-value="place">Place</th>
+					<th data-filter-value="date">Date</th>
+					<th data-filter-value="description">Description</th>
+					<th data-filter-value="status">Matched</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>B1</td>
+					<td>Bottle</td>
+					<td>Hyderabad</td>
+					<td>23-03-2023</td>
+					<td>Lost the bottle</td>
+					<td>Found</td>
+				</tr>
+				<tr>
+					<td>B2</td>
+					<td>Bottle</td>
+					<td>Hyderabad</td>
+					<td>23-03-2023</td>
+					<td>Lost the bottle</td>
+					<td>Found</td>
+				</tr>
+				<tr>
+					<td>B3</td>
+					<td>Bottle</td>
+					<td>Hyderabad</td>
+					<td>23-03-2023</td>
+					<td>Lost the bottle</td>
+					<td>Found</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="root">
+			<div class="stepper">
+				<span class="MuiStepLabel-alternativeLabel content">
+					<span class="MuiStepLabel-alternativeLabel circleContainer">
+						<div class="circleIcon">
+							<svg class="checkMark" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+								data-testid="CheckIcon">
+								<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+							</svg>
+						</div>
+					</span>
+					<span class=" MuiStepLabel-alternativeLabel textWrapper">
+						<span class=" MuiStepLabel-alternativeLabel text">Request submitted</span>
+					</span>
+				</span>
+			</div>
+			<div class="stepper">
+				<div class="MuiStepConnector-alternativeLabel Mui-active connectorWrapper">
+					<span class="MuiStepConnector-line  connector"></span>
+				</div>
+				<span class="MuiStepLabel-alternativeLabel content">
+					<span class=" Mui-active MuiStepLabel-alternativeLabel circleContainer">
+						<div class="circleIcon activeDot">
+							<div class="QontoStepIcon-circle"></div>
+						</div>
+					</span>
+					<span class=" MuiStepLabel-alternativeLabel textWrapper">
+						<span class=" Mui-active MuiStepLabel-alternativeLabel text">In progress</span>
+					</span>
+				</span>
+			</div>
+			<div class="stepper">
+				<div class=" MuiStepConnector-alternativeLabel Mui-disabled connectorWrapper">
+					<span class="MuiStepConnector-line  connector"></span>
+				</div>
+				<span class="  MuiStepLabel-alternativeLabel content">
+					<span class=" Mui-disabled MuiStepLabel-alternativeLabel circleContainer">
+						<div class="circleIcon">
+							<div class="QontoStepIcon-circle"></div>
+						</div>
+					</span>
+					<span class=" MuiStepLabel-alternativeLabel textWrapper">
+						<span class=" Mui-disabled MuiStepLabel-alternativeLabel text">Item matched</span>
+					</span>
+				</span>
+			</div>
+			<div class="stepper">
+				<div class=" MuiStepConnector-alternativeLabel Mui-disabled connectorWrapper">
+					<span class="MuiStepConnector-line  connector"></span>
+				</div>
+				<span class="  MuiStepLabel-alternativeLabel content">
+					<span class=" Mui-disabled MuiStepLabel-alternativeLabel circleContainer">
+						<div class="circleIcon">
+							<div class="QontoStepIcon-circle"></div>
+						</div>
+					</span>
+					<span class=" MuiStepLabel-alternativeLabel textWrapper">
+						<span class=" Mui-disabled MuiStepLabel-alternativeLabel text">Item claimed</span>
+					</span>
+				</span>
+			</div>
+			<div class="stepper">
+				<div class=" MuiStepConnector-alternativeLabel Mui-disabled connectorWrapper">
+					<span class="MuiStepConnector-line  connector"></span>
+				</div>
+				<span class="  MuiStepLabel-alternativeLabel content">
+					<span class=" Mui-disabled MuiStepLabel-alternativeLabel circleContainer">
+						<div class="circleIcon">
+							<div class="QontoStepIcon-circle"></div>
+						</div>
+					</span>
+					<span class=" MuiStepLabel-alternativeLabel textWrapper">
+						<span class=" Mui-disabled MuiStepLabel-alternativeLabel text">Closed</span>
+					</span>
+				</span>
 			</div>
 		</div>
-	</body>
+		<div class="pagination">
+			<a href="#">&laquo;</a>
+			<a class="active" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+			<a href="#">&raquo;</a>
+		</div>
+	</div>
+</body>
+
 </html>

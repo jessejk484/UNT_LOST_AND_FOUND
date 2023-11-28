@@ -3,18 +3,22 @@ body {
 	padding: 0;
 	background-color: #eee;
 }
+
 .header-container {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
 }
+
 header .highlight {
 	float: left;
 	color: #fff;
 }
+
 header .header-container .highlight:hover {
 	color: #000;
 }
+
 header {
 	background-color: green;
 	border-bottom: #000 4px solid;
@@ -53,6 +57,7 @@ table {
 
 th {
 	background-color: yellow;
+	cursor: pointer;
 }
 
 td,
@@ -70,6 +75,7 @@ footer {
 	padding: 20px;
 	min-height: 180px;
 }
+
 footer .boxes {
 	background-color: #000;
 	display: flex;
@@ -90,9 +96,11 @@ footer .boxes .box {
 footer .box a {
 	color: #fff;
 }
+
 footer .box a:hover {
 	color: green;
 }
+
 footer .box img {
 	width: 250px;
 }
@@ -118,4 +126,147 @@ footer .box img {
 .pagination a:hover:not(.active) {
 	background-color: #ddd;
 	border-radius: 5px;
+}
+
+.stepper {
+	padding-left: 8px;
+	padding-right: 8px;
+	flex: 1;
+	position: relative;
+}
+
+.connectorWrapper {
+	flex: 1 1 auto;
+	position: absolute;
+	top: 12px;
+	left: calc(-50% + 20px);
+	right: calc(50% + 20px);
+}
+
+.connectorWrapper.MuiStepConnector-alternativeLabel {
+	top: 10px;
+	left: calc(-50% + 16px);
+	right: calc(50% + 16px);
+}
+
+.connectorWrapper .MuiStepConnector-line {
+	border-color: #c9c9c9;
+	border-top-width: 3px;
+	border-radius: 1px;
+}
+
+.connector {
+	display: block;
+	border-color: #bdbdbd;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.content.Mui-disabled {
+	cursor: default;
+}
+
+.content.MuiStepLabel-alternativeLabel {
+	flex-direction: column;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+}
+
+.circleContainer.MuiStepLabel-alternativeLabel {
+	padding-right: 0;
+}
+
+.circleContainer {
+	flex-shrink: 0;
+	display: flex;
+	padding-right: 8px;
+}
+
+.circleIcon {
+	color: #c9c9c9;
+	display: flex;
+	height: 22px;
+	align-items: center;
+}
+
+.circleIcon .QontoStepIcon-circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: currentColor;
+}
+
+.textWrapper.MuiStepLabel-alternativeLabel {
+	text-align: center;
+}
+
+.textWrapper {
+	width: 100%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.text.MuiStepLabel-alternativeLabel {
+	margin-top: 16px;
+}
+
+.text {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 1.43;
+	letter-spacing: 0.01071em;
+	display: block;
+	transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.root {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.stepper {
+	padding-left: 8px;
+	padding-right: 8px;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+}
+
+.circleIcon .QontoStepIcon-completedIcon {
+	color: green;
+	z-index: 1;
+	font-size: 18px;
+}
+
+.checkMark {
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	fill: green;
+	flex-shrink: 0;
+	transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	font-size: 1.5rem;
+}
+
+.connectorWrapper.Mui-active .MuiStepConnector-line {
+	border-color: green;
+}
+
+.activeDot .QontoStepIcon-circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: currentColor;
+}
+
+.activeDot {
+	color: green;
+	display: flex;
+	height: 22px;
+	align-items: center;
 }
