@@ -25,10 +25,12 @@ body {
 	flex-direction: column;
 	padding: 10px;
 	background-color: white;
+	cursor: pointer;
 }
 
 .login-button {
 	position: relative;
+	cursor: pointer;
 }
 
 .container {
@@ -70,6 +72,7 @@ header .container .highlight:hover {
 	box-sizing: border-box;
 	/* display: inline-block; */
 	background-color: green;
+	cursor: pointer;
 }
 
 .container button:hover {
@@ -80,12 +83,14 @@ header .container .highlight:hover {
 	color: #fff;
 	font-size: 2.3em;
 	font-family: "Times New Roman", Times, serif;
+	cursor: pointer;
 }
 
 .container .box2 button {
 	color: #fff;
 	font-size: 2.3em;
 	font-family: "Times New Roman", Times, serif;
+	cursor: pointer;
 }
 
 footer {
@@ -124,4 +129,37 @@ footer .box a:hover {
 
 footer .box img {
 	width: 250px;
+}
+
+.menu-container {
+	position: relative;
+}
+
+.js-login-modal {
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	background-color: white;
+	cursor: pointer;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.user-info>div {
+	margin-bottom: 5px;
+	/* Add other styles as needed for user info */
+}
+
+.sign-out {
+	cursor: pointer;
+	color: #007bff;
+	padding: 1%;
+	/* Customize the color as needed */
+	/* Add other styles as needed for the "Sign Out" link */
 }

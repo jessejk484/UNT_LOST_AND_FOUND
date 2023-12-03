@@ -3,18 +3,27 @@ body {
 	padding: 0;
 	background-color: #eee;
 }
+
 .header-container {
 	width: 95%;
 	margin: auto;
-	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 }
+
 header .highlight {
 	float: left;
 	color: #fff;
+	margin-bottom: 10px;
 }
+
 header .header-container .highlight:hover {
 	color: #000;
 }
+
 header {
 	background-color: green;
 	border-bottom: #000 4px solid;
@@ -22,7 +31,6 @@ header {
 	color: #fff;
 	font-family: "Times New Roman", Times, serif;
 	text-transform: uppercase;
-	margin-bottom: 20px;
 }
 
 .header-container h2 {
@@ -35,7 +43,7 @@ header {
 	overflow: hidden;
 }
 
-.header-container button {
+/* .header-container button {
 	padding: 0;
 	border: none;
 	font-size: 16px;
@@ -43,7 +51,7 @@ header {
 	background-color: #eee;
 	height: 100%;
 	width: 100%;
-}
+} */
 
 table {
 	font-family: arial, sans-serif;
@@ -53,6 +61,7 @@ table {
 
 th {
 	background-color: yellow;
+	cursor: pointer;
 }
 
 td,
@@ -70,6 +79,7 @@ footer {
 	padding: 20px;
 	min-height: 180px;
 }
+
 footer .boxes {
 	background-color: #000;
 	display: flex;
@@ -90,9 +100,11 @@ footer .boxes .box {
 footer .box a {
 	color: #fff;
 }
+
 footer .box a:hover {
 	color: green;
 }
+
 footer .box img {
 	width: 250px;
 }
@@ -117,5 +129,61 @@ footer .box img {
 
 .pagination a:hover:not(.active) {
 	background-color: #ddd;
-    border-radius: 5px;
+	border-radius: 5px;
+}
+
+.login-modal {
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	width: fit-content;
+	gap: 11px;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.login-button {
+	position: relative;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+
+.menu-container {
+	position: relative;
+}
+
+.js-login-modal {
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	background-color: white;
+	cursor: pointer;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.user-info>div {
+	margin-bottom: 5px;
+	/* Add other styles as needed for user info */
+}
+
+.sign-out {
+	cursor: pointer;
+	color: #007bff;
+	padding: 1%;
+	/* Customize the color as needed */
+	/* Add other styles as needed for the "Sign Out" link */
 }

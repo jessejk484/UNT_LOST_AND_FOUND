@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,7 @@
 </head>
 <body>
     <h1 class="heading-title"><b> UNT LOST AND FOUND </b></h1>
-    
-<!-- partial:index.partial.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,4 +46,36 @@
 </html>
   
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dynamic Button Example</title>
+</head>
+
+<body>
+
+	<!-- This is where the button will be added -->
+	<div id="buttonContainer"></div>
+
+	<script>
+		// Create a button element
+		var button = document.createElement("button");
+
+		// Set button attributes and properties
+		button.innerHTML = "Click me!";
+		button.id = "myButton";
+		button.addEventListener("click", function () {
+			alert("Button clicked!");
+		});
+
+		// Append the button to the container element
+		document.getElementById("buttonContainer").appendChild(button);
+	</script>
+
+</body>
+
 </html>

@@ -174,3 +174,55 @@ canvas {
     height: 20px;
     /* Adjust the height as needed */
 }
+
+.login-modal {
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	width: fit-content;
+	gap: 11px;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.login-button {
+	position: relative;
+	cursor: pointer;
+}
+
+.menu-container {
+	position: relative;
+}
+
+.js-login-modal {
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	background-color: white;
+	cursor: pointer;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.user-info>div {
+	margin-bottom: 5px;
+	/* Add other styles as needed for user info */
+}
+
+.sign-out {
+	cursor: pointer;
+	color: #007bff;
+	padding: 1%;
+	/* Customize the color as needed */
+	/* Add other styles as needed for the "Sign Out" link */
+}

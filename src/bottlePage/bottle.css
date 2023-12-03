@@ -10,6 +10,16 @@ body {
 	overflow: hidden;
 }
 
+.header-containerd {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
 header .highlight {
 	float: left;
 	color: #fff;
@@ -39,7 +49,7 @@ header {
 	overflow: hidden;
 }
 
-.header-container button {
+/* .header-container button {
 	padding: 0;
 	border: none;
 	font-size: 16px;
@@ -47,7 +57,7 @@ header {
 	background-color: #eee;
 	height: 100%;
 	width: 100%;
-}
+} */
 
 table {
 	font-family: arial, sans-serif;
@@ -269,4 +279,56 @@ footer .box img {
 	display: flex;
 	height: 22px;
 	align-items: center;
+}
+
+.login-modal {
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	width: fit-content;
+	gap: 11px;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.login-button {
+	position: relative;
+	cursor: pointer;
+}
+
+.menu-container {
+	position: relative;
+}
+
+.js-login-modal {
+	position: absolute;
+	top: 100%;
+	margin-top: 1px;
+	right: 0;
+	background-color: white;
+	cursor: pointer;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.user-info>div {
+	margin-bottom: 5px;
+	/* Add other styles as needed for user info */
+}
+
+.sign-out {
+	cursor: pointer;
+	color: #007bff;
+	padding: 1%;
+	/* Customize the color as needed */
+	/* Add other styles as needed for the "Sign Out" link */
 }
