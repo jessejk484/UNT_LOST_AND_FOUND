@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./lostForm.css" />
-		<script src="lostForm.js"></script>
-		<title>Document</title>
-	</head>
-	<body>
-		<header>
-			<div class="header-container">
-				<a href="https://www.unt.edu/" target="_blank"
-					><h2>
-						<span class="highlight">UNT System</span>
-					</h2></a
-				>
-				<h2>UNT LOST AND FOUND</h2>
-			</div>
-		</header>
-		<div class="container">
-			<form class="my-form">
-				<h1>Form</h1>
-				<div class="form-group">
-					<label>Name</label>
-					<input type="text" name="name" placeholder="Name..." />
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./lostForm.css" />
+	<script src="lostForm.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div class="header-container">
+			<a href="https://www.unt.edu/" target="_blank">
+				<h2>
+					<span class="highlight">UNT System</span>
+				</h2>
+			</a>
+			<h2>UNT LOST AND FOUND</h2>
+			<button class="login-button js-login-button">
+				<svg name="IconMore" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true"
+					role="presentation" focusable="false" class="css-1uh2md0-inlineSVG-svgIcon"
+					style="width: 1em; height: 1em;">
+					<g role="presentation">
+						<path
+							d="M960 1468.235c93.448 0 169.412 75.965 169.412 169.412 0 93.448-75.964 169.412-169.412 169.412-93.448 0-169.412-75.964-169.412-169.412 0-93.447 75.964-169.412 169.412-169.412Zm0-677.647c93.448 0 169.412 75.964 169.412 169.412 0 93.448-75.964 169.412-169.412 169.412-93.448 0-169.412-75.964-169.412-169.412 0-93.448 75.964-169.412 169.412-169.412Zm0-677.647c93.448 0 169.412 75.964 169.412 169.412 0 93.447-75.964 169.412-169.412 169.412-93.448 0-169.412-75.965-169.412-169.412 0-93.448 75.964-169.412 169.412-169.412Z"
+							fill-rule="evenodd"></path>
+					</g>
+				</svg>
+				<div class="login-modal js-login-modal">
+					<div class="user-info">
+						<div class="sign-out">Abhishek</div>
+						<div class="sign-out" onclick="signOut()">Sign Out</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<label>Phone</label>
-					<input type="phone" name="phone" placeholder="Phone Number..." />
-				</div>
-				<div class="form-group">
-					<label>Date</label>
-					<input type="date" name="datetime" />
-				</div>
-				<label class="required">Type</label>
-				<br />
-				<div class="form-group">
-					<select name="role" id="role" required="">
-						<option value="select">Select</option>
-						<option value="lost">LOST</option>
-						<option value="found">FOUND</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label class="required">Item</label>
-					<input type="text" name="item" placeholder="Item..." required="" />
-				</div>
-				<div class="form-group">
-					<label class="required">Place</label>
-					<input type="text" name="age" placeholder="Place..." required="" />
-				</div>
-				<div class="form-group">
-					<label class="required">Item Description</label>
-					<textarea
-						type="text"
-						name="age"
-						placeholder="Item Description..."
-						required=""
-					></textarea>
-				</div>
-				<div class="mybutton">
-					<button type="button" type="submit" onclick="redirectToResponse()">
-						Submit
-					</button>
-				</div>
-			</form>
+			</button>
 		</div>
-		<footer>
-			<div class="boxes">
-				<div class="box">
-					<img src="/Users/puppa/All_Git_Files/unt_lost_and_found/src/imageFiles/unt_logo_3.png" />
-					<p>
-						1155 Union Circle #305398 <br />
-						Denton, Texas 76203-5017
-					</p>
-				</div>
-				<div class="box">
-					<h3 style="color: green">Required Maintenance</h3>
-					<p>
-						myUNT requires routine maintenance.
-						<br />
-						<br />
-						Plan for service intermissions:
-						<br />Tuesday and Thursday 7:00 pm - 9:30 pm <br />Saturday 7:00 pm
-						until noon Sunday
-					</p>
-				</div>
-				<div class="box">
-					<h3 style="color: green">Get Help</h3>
-					<a href="">University Information Technology Help Desk</a>
-					<p>940-565-2324</p>
-					<a href="">helpdesk@unt.edu</a>
-				</div>
+	</header>
+	<div class="container">
+		<form class="my-form">
+			<h1>Form</h1>
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" name="name" placeholder="Name..." />
 			</div>
-		</footer>
-	</body>
+			<div class="form-group">
+				<label>Phone</label>
+				<input type="phone" name="phone" placeholder="Phone Number..." />
+			</div>
+			<div class="form-group">
+				<label>Date</label>
+				<input type="date" name="datetime" />
+			</div>
+			<label class="required">Type</label>
+			<br />
+			<div class="form-group">
+				<select name="role" id="role" required="">
+					<option value="select">Select</option>
+					<option value="lost">LOST</option>
+					<option value="found">FOUND</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="required">Item</label>
+				<input type="text" name="item" placeholder="Item..." required="" />
+			</div>
+			<div class="form-group">
+				<label class="required">Place</label>
+				<input type="text" name="age" placeholder="Place..." required="" />
+			</div>
+			<div class="form-group">
+				<label class="required">Item Description</label>
+				<textarea type="text" name="age" placeholder="Item Description..." required=""></textarea>
+			</div>
+			<div class="mybutton">
+				<button type="button" style="cursor: pointer;" type="submit" onclick="redirectToResponse()">
+					Submit
+				</button>
+			</div>
+		</form>
+	</div>
+	<footer>
+		<div class="boxes">
+			<div class="box">
+				<img src="/Users/puppa/All_Git_Files/unt_lost_and_found/src/imageFiles/unt_logo_3.png" />
+				<p>
+					1155 Union Circle #305398 <br />
+					Denton, Texas 76203-5017
+				</p>
+			</div>
+			<div class="box">
+				<h3 style="color: green">Required Maintenance</h3>
+				<p>
+					myUNT requires routine maintenance.
+					<br />
+					<br />
+					Plan for service intermissions:
+					<br />Tuesday and Thursday 7:00 pm - 9:30 pm <br />Saturday 7:00 pm
+					until noon Sunday
+				</p>
+			</div>
+			<div class="box">
+				<h3 style="color: green">Get Help</h3>
+				<a href="">University Information Technology Help Desk</a>
+				<p>940-565-2324</p>
+				<a href="">helpdesk@unt.edu</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
